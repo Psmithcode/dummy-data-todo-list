@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+.body{
+    width: 100%;
+    height: auto;
+    background-color: cadetblue;
+}
+
+.pageContainer{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: cadetblue;
+}
+
+.buttonContainer{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aqua;
+}
+
+.listContainer{
+    background-color: aqua;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
