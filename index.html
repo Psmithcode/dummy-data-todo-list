@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="pageContainer">
+      <div class="buttonContainer">
+        <input
+          type="number"
+          id="numberInput"
+          minlength="1"
+          maxlength="10"
+          onkeyup=""
+        />
+        <button onclick="filterTodos()">Filter Todos</button>
+        <button onclick="completeTodos()">Complete?</button>
+        <button onclick="fetchTodos()">Fetch Todos</button>
+        <button onclick="logTodos()">Log Todos</button>
+        <button onclick="populateTodos()">Populate Todos</button>
+      </div>
 
-        <div class="buttonContainer">
-            <button onclick="fetchTodos()">Fetch Todos</button>
-            <button onclick="logTodos()">Log Todos</button>
-            <button onclick="populateTodos()">Populate Todos</button>
-        </div>
-
-        <div class="listContainer">
-            <ol id="todo-list">
-                <!-- LIs will go here -->
-            </ol>
-        </div>
+      <div class="listContainer">
+        <ol id="todo-list">
+          <!-- LIs will go here -->
+        </ol>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
